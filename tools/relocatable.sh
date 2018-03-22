@@ -37,6 +37,7 @@ HUE_ROOT="$CURR_DIR/.."
 ENV_PYTHON="$HUE_ROOT/build/env/bin/python"
 VIRTUAL_BOOTSTRAP="$CURR_DIR/virtual-bootstrap/virtual-bootstrap.py"
 
+export PATH=$(dirname $ENV_PYTHON):$PATH
 # Step 1. Fix virtualenv
 $ENV_PYTHON $VIRTUAL_BOOTSTRAP --relocatable "$HUE_ROOT/build/env"
 
