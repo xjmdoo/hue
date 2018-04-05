@@ -208,19 +208,9 @@
         },
         open: function(event, ui) {
           hideSpinner();
-          if($element.data('custom-hueAutocomplete')) {
-            if($element.data('custom-hueAutocomplete').menu.element.getNiceScroll()) {
-              $element.data('custom-hueAutocomplete').menu.element.getNiceScroll().resize();
-            }
-          }
         },
         close: function(event, ui) {
           hideSpinner();
-          if($element.data('custom-hueAutocomplete')) {
-            if($element.data('custom-hueAutocomplete').menu.element.getNiceScroll()) {
-              $element.data('custom-hueAutocomplete').menu.element.getNiceScroll().hide();
-            }
-          }
         }
       }, options);
 
