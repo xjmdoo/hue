@@ -147,7 +147,6 @@ Checked-in frontend third party dependencies
 |Medium Editor|?|MIT|https://github.com/yabwe/medium-editor|
 |Moment.js|2.13.0|MIT|https://momentjs.com|
 |Mustache.js|0.7.2|MIT|http://github.com/janl/mustache.js|
-|Nicescroll|3.7.6|MIT|https://github.com/inuyaksa/jquery.nicescroll|
 |nvd3|1.1.15b|Apache|https://github.com/novus/nvd3|
 |page.js|1.7.1|MIT|https://github.com/visionmedia/page.js|
 |Plotly.js|1.31.0|MIT|https://github.com/plotly/plotly.js/|
