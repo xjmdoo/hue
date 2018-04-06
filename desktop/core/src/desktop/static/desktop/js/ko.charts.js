@@ -22,6 +22,7 @@
       LINECHART: "lines",
       BARCHART: "bars",
       TIMELINECHART: "timeline",
+      TEXTLIST: "textlist",
       POINTCHART: "points",
       PIECHART: "pie",
       MAP: "map",
