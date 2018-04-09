@@ -3703,14 +3703,21 @@
       var $element = $(element);
       $element.css("overflow", "hidden");
 
+      var isTouch = false;
+      $element.on('touchstart', function () {
+        isTouch = true;
+      });
+
       var scrollTimeout = -1;
-      $element.hover(function() {
-        scrollTimeout = window.setTimeout(function() {
+      $element.hover(function () {
+        scrollTimeout = window.setTimeout(function () {
           $element.css("overflow", "auto");
         }, ko.unwrap(valueAccessor) || 500);
-      }, function() {
-        clearTimeout(scrollTimeout);
-        $element.css("overflow", "hidden");
+      }, function () {
+        if (!isTouch) {
+          clearTimeout(scrollTimeout);
+          $element.css("overflow", "hidden");
+        }
       });
     }
   };
